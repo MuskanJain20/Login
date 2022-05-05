@@ -1,0 +1,223 @@
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>INVISIBLE FOOD CHART</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=Ddevice-width,user-scalable=no, initial-scale=1.0,maximum- scale=1.0, minimum-scale=1.0">
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="./style.css">
+ </head>
+<body>
+<div class="container-fluid mt-5">
+<h2 class="mb -5 text-center">INVISIBLE FOOD CHART</h2>
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="table-responsive">
+<table id="myTable" class="table">
+<thead>
+<tr>
+<th>Product</th>
+ <th>Name</th>
+<th>Qty</th>
+<th>kcal/product</th>
+<th class="text-right">
+<span id="amount"class="amount">Calorie</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="1.png">
+</div>
+</div>
+</td>
+<td>
+<p>Apple</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="95" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="2.png">
+</div>
+</div>
+</td>
+<td>
+<p>Cold-Drink</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="140" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="3.png">
+</div>
+</div>
+</td>
+<td>
+<p>Butter</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="102" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="4.png">
+</div>
+</div>
+</td>
+<td>
+<p>Milk</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="42" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="5.png">
+</div>
+</div>
+</td>
+<td>
+<p>Wheat</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="364" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+<div class="product-img">
+ <div class="img-prdct">
+<img src="6.png">
+</div>
+</div>
+</td>
+<td>
+<p>Fried Chicken</p>
+</td>
+<td>
+     <div class="button-container">
+<button class="cart-qty-plus"type="button"value="+">+</button>
+<input type="text" name="qty"min="0" class="qty form-control"value="0" />
+
+ <button class="cart-qty-minus"type="button"value="-">-</button>
+</div>
+</td>
+<td>
+<input type="text" value="246" class="price form-control"disabled>
+</td>
+<td align="right"><span id="amount" class="amount">0</span>
+</td>
+</tr>
+
+
+
+
+
+
+</tbody>
+ <tfoot>
+<tr>
+<td colspan="4"></td>
+<td align="right">
+<strong>TOTAL CALORIES = <span id="total"class="total">0</span>
+</strong>
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+ </div>
+</div>
+</div>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src="./script.js"></script>
+ </body>
+</html>

@@ -9,9 +9,17 @@ def signup():
 @app.route('/user/signout')
 def signout():
   return User().signout()
-@app.route("/index/")
+
+@app.route('/index/',methods=["POST","GET"])
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
+@app.route('/food_chart/',methods=["POST","GET"])
+def food_chart():
+    return render_template("food_chart.html")
+@app.route('/chatbot/',methods=["POST","GET"])
+def chatbot():
+    return render_template("chatbot.html")
+
 
 
 @app.route('/user/login', methods=['POST'])

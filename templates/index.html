@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -8,27 +7,29 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
+
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/img/icon.ico')}}">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="static/css/slicknav.css">
-    <link rel="stylesheet" href="static/css/flaticon.css">
-    <link rel="stylesheet" href="static/css/gijgo.css">
-    <link rel="stylesheet" href="static/css/animate.min.css">
-    <link rel="stylesheet" href="static/css/animated-headline.css">
-    <link rel="stylesheet" href="static/css/magnific-popup.css">
-    <link rel="stylesheet" href="static/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="static/css/themify-icons.css">
-    <link rel="stylesheet" href="static/css/slick.css">
-    <link rel="stylesheet" href="static/css/nice-select.css">
-    <link rel="stylesheet" href="static/css/style.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/owl.carousel.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/animated-headline.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
 </head>
 <body class="black-bg">
     <!-- ? Preloader Start -->
-
-
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -149,7 +150,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
-                            <img src="static/img/gallery/team1.png" alt="">
+
+                            <img src="{{ url_for('static', filename='/img/gallery/team1.png')}}" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.html">Body Building</a></h5>
@@ -160,7 +162,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="static/img/gallery/team2.png" alt="">
+
+                            <img src="{{ url_for('static', filename='/img/gallery/team2.png')}}" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.html">Muscle Gain</a></h5>
@@ -171,7 +174,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="static/img/gallery/team3.png" alt="">
+                            <img src="{{ url_for('static', filename='/img/gallery/team3.png')}}" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.html">Weight Loss</a></h5>
@@ -196,7 +199,8 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery1.jpg);"></div>
+
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/60428236ba83ba4491b5b1f9640c7a33adc58d70cb0ad0644a409801a9243c88d3b6291d.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content" action="/pushup">
                                 <h3>Push up </h3>
@@ -207,7 +211,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery2.jpg);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/661239421446dc8794f3184049df342d1a5981bb7c80be2052f422fe9e12d188a15dd1af.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Pull up </h3>
@@ -218,7 +222,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery3.jpg);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/419396053bbae0d197ffd3c01cd9f79d488a89628a01fdd91cfc4db7027caedc1a6ea487.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Squats </h3>
@@ -229,7 +233,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery4.jpg);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/59707307fc90e9bb5243ab6a8dddff57f3a76abfc5d26ba8b55fe0686408c9554d0dfbae.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Bicep Curl </h3>
@@ -240,7 +244,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery5.jpg);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/33845285d3b3cba87b3ff871bf41c6bd59ae3ac018ed6173af4cbf5f0a76b13561d2ec77.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Crunches</h3>
@@ -251,7 +255,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(static/img/gallery/gallery6.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(https://serving.photos.photobox.com/5902548807d40262701cbfa59113baa3f9e961f5f5042259b4e76237f3af6315c163b27c.jpg);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Muscle gaining </h3>
@@ -266,79 +270,79 @@
     <!-- Gallery Area End -->
     <!-- Courses area start -->
 
-    <!-- Courses area End -->
-    <!--? About Area-2 Start -->
-    <section id="about" class="about-area2 fix pb-padding pt-50 pb-80">
-        <div class="support-wrapper align-items-center">
-            <div class="right-content2">
-                <!-- img -->
-                <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <img src="static/img/gallery/aboutus.png" alt="">
-                </div>
-            </div>
-            <div class="left-content2">
-                <!-- section tittle -->
-                <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="front-text">
-                        <h2 class="">About US</h2>
-                        <p>We are Karuna Girdhar, Muskan Jain and Simran. We are three 4th years from the Computer Science Engineers.</p>
-                        <p class="mb-40">We have created this app, so that one can train from anywhere.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Area End -->
-    <!--? Blog Area Start -->
+<!--    &lt;!&ndash; Courses area End &ndash;&gt;-->
+<!--    &lt;!&ndash;? About Area-2 Start &ndash;&gt;-->
+<!--    <section id="about" class="about-area2 fix pb-padding pt-50 pb-80">-->
+<!--        <div class="support-wrapper align-items-center">-->
+<!--            <div class="right-content2">-->
+<!--                &lt;!&ndash; img &ndash;&gt;-->
+<!--                <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">-->
+<!--                    <img src="static/img/gallery/aboutus.png" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="left-content2">-->
+<!--                &lt;!&ndash; section tittle &ndash;&gt;-->
+<!--                <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">-->
+<!--                    <div class="front-text">-->
+<!--                        <h2 class="">About US</h2>-->
+<!--                        <p>We are Karuna Girdhar, Muskan Jain and Simran. We are three 4th years from the Computer Science Engineers.</p>-->
+<!--                        <p class="mb-40">We have created this app, so that one can train from anywhere.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; About Area End &ndash;&gt;-->
+<!--    &lt;!&ndash;? Blog Area Start &ndash;&gt;-->
 
-    <!-- Blog Area End -->
-    <!--? video_start -->
+<!--    &lt;!&ndash; Blog Area End &ndash;&gt;-->
+<!--    &lt;!&ndash;? video_start &ndash;&gt;-->
 
-    <!-- video_end -->
-    <!-- ? services-area -->
-    <section id="contact-us" class="services-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <div class="features-icon">
-                            <img src="/static/img/blog/author.png" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Karuna Girdhar</h3>
-                            <p>karunagirdhar139@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="features-icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Simran</h3>
-                            <p>simransetia11111@gmail.com</p>
+<!--    &lt;!&ndash; video_end &ndash;&gt;-->
+<!--    &lt;!&ndash; ? services-area &ndash;&gt;-->
+<!--    <section id="contact-us" class="services-area">-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-between">-->
+<!--                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">-->
+<!--                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">-->
+<!--                        <div class="features-icon">-->
+<!--                            <img src="/static/img/blog/author.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="features-caption">-->
+<!--                            <h3>Karuna Girdhar</h3>-->
+<!--                            <p>karunagirdhar139@gmail.com</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">-->
+<!--                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">-->
+<!--                        <div class="features-icon">-->
+<!--                            <img src="" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="features-caption">-->
+<!--                            <h3>Simran</h3>-->
+<!--                            <p>simransetia11111@gmail.com</p>-->
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                        <div class="features-icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Muskan Jain</h3>
-                            <p>jainmuskaan698@gmail.com</p>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">-->
+<!--                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">-->
+<!--                        <div class="features-icon">-->
+<!--                            <img src="" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="features-caption">-->
+<!--                            <h3>Muskan Jain</h3>-->
+<!--                            <p>jainmuskaan698@gmail.com</p>-->
 
-                        </div>
-                    </div>
-                </div>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-            </div>
-        </div>
-    </section>
-</main>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
 <footer>
     <!--? Footer Start-->
     <div class="footer-area black-bg">
@@ -399,44 +403,65 @@
 
 <!-- JS here -->
 
-<script src="./static/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="{{ url_for('static', filename='/js/vendor/modernizr-3.5.0.min.js')}}"></script>
 <!-- Jquery, Popper, Bootstrap -->
-<script src="./static/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="./static/js/popper.min.js"></script>
-<script src="./static/js/bootstrap.min.js"></script>
+
+<script src="{{ url_for('static', filename='/js/vendor/jquery-1.12.4.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/popper.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/bootstrap.min.js')}}"></script>
 <!-- Jquery Mobile Menu -->
-<script src="./static/js/jquery.slicknav.min.js"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.slicknav.min.js')}}"></script>
 
 <!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="./static/js/owl.carousel.min.js"></script>
-<script src="./static/js/slick.min.js"></script>
+
+<script src="{{ url_for('static', filename='/js/owl.carousel.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/slick.min.js')}}"></script>
 <!-- One Page, Animated-HeadLin -->
-<script src="./static/js/wow.min.js"></script>
-<script src="./static/js/animated.headline.js"></script>
-<script src="./static/js/jquery.magnific-popup.js"></script>
+
+<script src="{{ url_for('static', filename='/js/wow.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/animated.headline.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.magnific-popup.js')}}" ></script>
 
 <!-- Date Picker -->
-<script src="./static/js/gijgo.min.js"></script>
+
+<script src="{{ url_for('static', filename='/js/gijgo.min.js')}}" ></script>
 <!-- Nice-select, sticky -->
-<script src="./static/js/jquery.nice-select.min.js"></script>
-<script src="./static/js/jquery.sticky.js"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.nice-select.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.sticky.js')}}"></script>
 
 <!-- counter , waypoint,Hover Direction -->
-<script src="./static/js/jquery.counterup.min.js"></script>
-<script src="./static/js/waypoints.min.js"></script>
-<script src="./static/js/jquery.countdown.min.js"></script>
-<script src="./static/js/hover-direction-snake.min.js"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.counterup.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/waypoints.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.countdown.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/hover-direction-snake.min.js')}}"></script>
 
 <!-- contact js -->
-<script src="./static/js/contact.js"></script>
-<script src="./static/js/jquery.form.js"></script>
-<script src="./static/js/jquery.validate.min.js"></script>
-<script src="./static/js/mail-script.js"></script>
-<script src="./static/js/jquery.ajaxchimp.min.js"></script>
+<script src="{{ url_for('static', filename='/js/contact.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.form.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.validate.min.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/mail-script.js')}}"></script>
+
+<script src="{{ url_for('static', filename='/js/jquery.ajaxchimp.min.js')}}"></script>
 
 <!-- Jquery Plugins, main Jquery -->
-<script src="./static/js/plugins.js"></script>
-<script src="./static/js/main.js"></script>
+
+<script src="{{ url_for('static', filename='/js/plugins.js')}}"></script>
+<script src="{{ url_for('static', filename='/js/main.js')}}"></script>
 
 </body>
 </html>

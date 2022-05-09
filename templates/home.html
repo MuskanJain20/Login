@@ -1,50 +1,76 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="card-wrapper">
 
-    <div class="card">
+	<br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Welcome</h2>
+            <form name="login_form">
+                <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" class="field" required />
+            </label>
+            <label for="password">
+                <span>Password</span>
+                <input type="password"  name="password" class="field" required/>
+            </label>
 
-      <h1 class="center">Create an Account</h1>
+            <p class="error error&#45;&#45;hidden"></p>
+            <p class="forgot-pass">Forgot password?</p>
+                <input type="submit" value="Log In" class="btn submit">
 
-      <form name="signup_form">
+            </form>
 
-        <label for="name">Name</label>
-        <input type="text" name="name" class="field" required>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" class="field" required>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" class="field" required>
 
-        <p class="error error--hidden"></p>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
 
-        <input type="submit" value="Sign Up" class="btn">
-      
-      </form>
-      
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <form name="signup_form">
+                    <label for="name">
+                    <span>Name</span>
+                    <input  type="text" name="name" class="field" required />
+                </label>
+                    <label for="email">
+                    <span>Email</span>
+                    <input type="email" name="email" class="field" required/>
+                </label>
+                <label for="password">
+                    <span>Password</span>
+                    <input type="password" name="password" class="field" required/>
+                </label>
+                    <input type="submit" value="Sign Up" class="btn">
+
+
+                </form>
+
+
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-
-      <h1 class="center">Log In</h1>
-
-      <form name="login_form">
-
-        <label for="email">Email</label>
-        <input type="email" name="email" class="field" required>
-
-        <label for="password">Password</label>
-        <input type="password" name="password" class="field" required>
-
-        <p class="error error--hidden"></p>
-
-        <input type="submit" value="Log In" class="btn">
-      
-      </form>
-      
-    </div>
-  
-  </div>
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
 {% endblock %}

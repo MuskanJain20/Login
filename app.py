@@ -1,6 +1,12 @@
 from flask import Flask, render_template, redirect, url_for, request, session, Response
 from functools import wraps
 import pymongo
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+from requests import get
+from bs4 import BeautifulSoup
+import os
+from flask import Flask, render_template, request, jsonify
 
 import pandas as pd
 import numpy as np
@@ -44,6 +50,10 @@ def home():
 @login_required
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/test/')
+def test():
+    return render_template('test.html')
 if __name__ == '__main__':
 
     app.run()
